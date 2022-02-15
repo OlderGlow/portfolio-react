@@ -2,7 +2,7 @@ import './card.css'
 
 function card(link) {
   return (
-    <div><img src={link} alt="" srcset="" /></div>
+    <div><img src={link} alt="Logo Compétences" /></div>
   )
 }
 

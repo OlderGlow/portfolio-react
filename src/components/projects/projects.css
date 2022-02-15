@@ -8,11 +8,15 @@
 .projects-right{
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-left{
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -27,6 +31,21 @@
     position: absolute;
 }
 
+.projects-wrapper{
+    display: flex;
+    flex: 10;
+}
+
+.projects-left-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects-left-wrapper h2{
+    font-weight: 300;
+}
+
 .projects-title h1{
     font-weight: 600;
     font-size: 34px;
@@ -34,4 +53,19 @@
     color: #ffc107;
     padding: 1rem;
     border-radius: 3px;
+}
+
+.projects-left-img{
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+}
+
+.projects-left-img:hover{
+    transition: 0.5s ease-out;
+    transform: scale(1.03);
+    cursor: pointer;
+    border-radius: 30px;
 }

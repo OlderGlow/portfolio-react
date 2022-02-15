@@ -1,0 +1,37 @@
+.projects-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.projects-right{
+    display: flex;
+    flex: 1;
+}
+
+.projects-left{
+    display: flex;
+    flex: 1;
+}
+
+
+.projects-title{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    top: 0;
+    position: absolute;
+}
+
+.projects-title h1{
+    font-weight: 600;
+    font-size: 34px;
+    background: white;
+    color: #ffc107;
+    padding: 1rem;
+    border-radius: 3px;
+}

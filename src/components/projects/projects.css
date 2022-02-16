@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 10rem;
 }
 
 .projects-left-wrapper h2 {
@@ -60,6 +61,10 @@
     height: 350px;
     border-radius: 10px;
     transition: 0.5s ease-out;
+}
+
+svg{
+    position: absolute;
 }
 .projects-left-img:hover {
     transition: 0.5s ease-out;
@@ -90,5 +95,9 @@
         color: #ffc107;
         padding: 0.5rem;
         border-radius: 3px;
+    }
+
+    .projects-left-wrapper {
+        margin-top: 7rem;
     }
 }

@@ -3,6 +3,7 @@ import Me from '../../img/julien.png';
 
 function HeadPage() {
     return (
+        <>
         <div className='container'>
             <div className='head-left'>
                 <div className='head-title'>
@@ -27,6 +28,7 @@ function HeadPage() {
                 <img src={Me} alt="Photoprofil" className='head-right-photo'/>
             </div>
         </div>
+        </>
     )
 }
 

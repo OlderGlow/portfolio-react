@@ -1,0 +1,61 @@
+.contact-container
+{
+    display: flex;
+    height: 100vh;
+}
+
+.contact-informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    text-align: center;
+}
+
+.fa-phone{
+    color: #368522;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-left-title{
+    font-size: 64px;
+}
+
+.contact-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+    padding: 10rem;
+}
+
+input, textarea {
+    transition: all 0.1s ease;
+    border: none;
+    padding: 10px;
+    margin: 10px 10px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+}
+
+input:focus, textarea:focus{
+    transition: all 0.1s ease;
+    border: 1px solid #000000;
+}

@@ -5,7 +5,7 @@ function Projects() {
     return (
         <div className='projects-container'>
             <div className='projects-header'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style={{position: 'absolute'}}>
                     <path
                         fill="#ffc107"
                         fillOpacity="1"

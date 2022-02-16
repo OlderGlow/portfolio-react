@@ -1,11 +1,10 @@
 import './contact.css';
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 function Contact() {
 
     const form = useRef();
-    const [send,
-        setSend] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs

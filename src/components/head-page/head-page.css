@@ -115,6 +115,7 @@ li {
 @media screen and (max-width: 480px) {
     .container {
         flex-direction: column-reverse;
+        min-height: 100vh;
     }
 
     .head-right-menu i {
@@ -124,6 +125,9 @@ li {
         transition: 0.5s ease-out;
     }
 
+    .head-left{
+        align-items: center;
+    }
     .head-right-menu {
         position: fixed;
         z-index: 999999;

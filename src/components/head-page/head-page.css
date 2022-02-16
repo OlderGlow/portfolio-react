@@ -9,7 +9,9 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
-
+h2{
+    margin-bottom: 1px;
+}
 .head-right-menu {
     position: fixed;
     z-index: 999999;

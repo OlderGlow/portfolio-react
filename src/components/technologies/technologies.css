@@ -18,7 +18,6 @@
     display: flex;
     flex: 10;
     align-items: center;
-    margin-top: -100px;
 }
 .technologies-title h1{
     font-weight: 600;

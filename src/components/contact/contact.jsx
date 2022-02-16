@@ -21,7 +21,7 @@ function Contact() {
             <div className="contact-left">
                 <h1>Me contacter</h1>
                 <div className="contact-informations">
-                    <h4><i class="fa-solid fa-phone"></i> +33650287234</h4>
+                    <h4><i class="fa-solid fa-phone"></i> +(33)0650287234</h4>
                     <h4><i class="fa-solid fa-at"></i> julienpicquet1@gmail.com</h4>
                     <h4><i class="fa-solid fa-location-dot"></i> 6 Boulevard du Général de Gaulle - 49100 Angers</h4>
                 </div>

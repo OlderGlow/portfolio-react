@@ -12,22 +12,25 @@ function HeadPage() {
                     <h2>Concepteur - Développeur d'Application</h2>
                 </div>
             </div>
-            <div className='head-right'>
-                <div className="head-right-bg"></div>
-                <div className='head-right-menu'>
-                <a href="mailto:julienpicquet1@gmail.com">
-                    <i className='far fa-envelope'></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jpicquet/" target="_blank" rel='noreferrer'>
-                    <i className='fab fa-linkedin'></i>
-                </a>
-                <a href="https://github.com/olderglow" target="_blank" rel='noreferrer'>
-                    <i className='fab fa-github'></i>
-                </a>
-                </div>
-                <img src={Me} alt="Photoprofil" className='head-right-photo'/>
+            <section className='head-right'>
+                    <div className="head-right-bg"></div>
+                    <nav className='head-right-menu'>
+                        <ul>
+                            <li><a href="mailto:julienpicquet1@gmail.com">
+                                <i className='far fa-envelope'></i>
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/jpicquet/" target="_blank" rel='noreferrer'>
+                                <i className='fab fa-linkedin'></i>
+                            </a></li>
+                            <li><a href="https://github.com/olderglow" target="_blank" rel='noreferrer'>
+                                <i className='fab fa-github'></i>
+                            </a></li>
+                        </ul>
+
+                    </nav>
+                    <img src={Me} alt="Photoprofil" className='head-right-photo'/>
+                </section>
             </div>
-        </div>
         </>
     )
 }

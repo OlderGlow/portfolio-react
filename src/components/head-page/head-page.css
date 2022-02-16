@@ -100,6 +100,24 @@ a {
         flex-direction: column-reverse;
     }
 
+    .head-right-menu i {
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+        cursor: pointer;
+        transition: 0.5s ease-out;
+    }
+
+    .head-right-menu {
+        position: fixed;
+        z-index: 999999;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        font-size: 1.4rem;
+        position: absolute;
+        color: white;
+    }
+
     .head-right-bg{
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
         background-color: #ffc107;
@@ -108,5 +126,13 @@ a {
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .head-title h1 {
+        font-size: 38px;
+    }
+
+    .head-title h2{
+        font-size: 28px;
     }
 }

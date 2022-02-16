@@ -46,3 +46,17 @@
     font-weight: bolder;
     border-radius: 3px;
 }
+
+@media screen and (max-width: 480px) {
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-left{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .about-title{
+        font-size: 18px;
+    }
+}

@@ -69,3 +69,21 @@
     cursor: pointer;
     border-radius: 30px;
 }
+
+@media screen and (max-width: 480px){
+
+    .projects-container{
+        flex-direction: column;
+    }
+    .projects-left-img{
+        width: 250px;
+        height: 250px;
+    }
+    .projects-title{
+        margin-top: 3rem;
+    }
+
+    .projects-wrapper{
+        flex-direction: column;
+    }
+}

@@ -42,7 +42,6 @@ form{
     align-items: center;
     justify-content: center;
     background-color: #ffc107;
-    padding: 10rem;
 }
 
 input, textarea {
@@ -58,4 +57,10 @@ input, textarea {
 input:focus, textarea:focus{
     transition: all 0.1s ease;
     border: 1px solid #000000;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container{
+        flex-direction: column;
+    }
 }

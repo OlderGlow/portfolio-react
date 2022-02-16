@@ -50,7 +50,7 @@ function Technologies() {
             </div>
          
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230" style={{position: 'relative'}}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" style={{position: 'relative'}}>
                     <path
                         fill="#ffc107"
                         fillOpacity="1"

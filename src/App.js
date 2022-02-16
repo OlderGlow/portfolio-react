@@ -3,6 +3,7 @@ import AboutMe from "./components/about-me/about-me";
 import Technologies from "./components/technologies/technologies";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import './index.css';
 function App() {
     return (
         <div>

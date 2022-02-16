@@ -12,6 +12,9 @@ a {
 h2{
     margin-bottom: 1px;
 }
+h1{
+    margin-bottom: 1px;
+}
 .head-right-menu {
     position: fixed;
     z-index: 999999;

@@ -26,7 +26,6 @@ function HeadPage() {
                                 <i className='fab fa-github'></i>
                             </a></li>
                         </ul>
-
                     </nav>
                     <img src={Me} alt="Photoprofil" className='head-right-photo'/>
                 </section>

@@ -7,9 +7,9 @@ function HeadPage() {
         <div className='container'>
             <div className='head-left'>
                 <div className='head-title'>
-                    <h2>Bonjour, je suis</h2>
+                    <h2 id='head-title-first'>Bonjour, je suis</h2>
                     <h1>Julien PICQUET</h1>
-                    <h2>Concepteur - Développeur d'Application</h2>
+                    <h2 id='head-title-third'>Concepteur - Développeur d'Application</h2>
                 </div>
             </div>
             <section className='head-right'>

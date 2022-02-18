@@ -4,13 +4,13 @@ import Drunk from '../../img/projects/drunk.png';
 function Projects() {
     return (
         <div className='projects-container'>
-            <div className='projects-header'>
+            <section className='projects-header'>
                 <div className='projects-title'>
                     <h1>Projets</h1>
                 </div>
-            </div>
+            </section>
             <div className='projects-wrapper'>
-                <div className='projects-left'>
+                <section className='projects-left'>
                     <div className='projects-left-wrapper'>
                         <h2>L'Atelier Créatif</h2>
                         <a href="https://latelier-creatif.vercel.app" target="_blank" rel='noreferrer'>
@@ -20,8 +20,8 @@ function Projects() {
                                 alt="L'Atelier Créatif"/>
                         </a>
                     </div>
-                </div>
-                <div className='projects-right'>
+                </section>
+                <section className='projects-right'>
                     <div className='projects-left-wrapper'>
                         <h2>Drunk</h2>
                         <a href="https://drunk-game-react.vercel.app" target="_blank" rel='noreferrer'>
@@ -31,7 +31,7 @@ function Projects() {
                                 alt="Drunk"/>
                         </a>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     )

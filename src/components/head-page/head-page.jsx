@@ -5,13 +5,13 @@ function HeadPage() {
     return (
         <>
         <div className='container'>
-            <div className='head-left'>
+            <section className='head-left'>
                 <div className='head-title'>
                     <h2 id='head-title-first'>Bonjour, je suis</h2>
                     <h1>Julien PICQUET</h1>
                     <h2 id='head-title-third'>Concepteur - Développeur d'Application</h2>
                 </div>
-            </div>
+            </section>
             <section className='head-right'>
                     <div className="head-right-bg"></div>
                     <nav className='head-right-menu'>

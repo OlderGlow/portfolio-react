@@ -1,10 +1,9 @@
-.contact-container
-{
+.contact-container {
     display: flex;
     height: 100vh;
 }
 
-.contact-informations{
+.contact-informations {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,55 +11,209 @@
     text-align: center;
 }
 
-.fa-phone{
+.fa-phone {
     color: #368522;
 }
-.contact-left{
+.contact-left {
     display: flex;
     flex-direction: column;
     flex: 1;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #ffc107;
 }
 
-.contact-left-title{
+.contact-left-title {
     font-size: 64px;
 }
 
-.contact-right{
+.contact-right {
     display: flex;
+    flex-direction: column;
     flex: 1;
     align-items: center;
     justify-content: center;
     text-align: justify;
 }
+.contact-group {
+    display: flex;
+}
 
-form{
+.contact-group input {
+    margin-right: 1rem;
+}
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffc107;
+    margin-top: 1rem;
 }
 
-input, textarea {
-    transition: all 0.1s ease;
-    border: none;
-    padding: 10px;
-    margin: 10px 10px;
-    border-bottom: 1px solid black;
-    background-color: transparent;
-    outline: none;
+h4 {
+    margin-bottom: 0;
 }
 
-input:focus, textarea:focus{
-    transition: all 0.1s ease;
-    border: 1px solid #000000;
+.contact-error{
+    color: red;
 }
-
 @media screen and (max-width: 480px) {
-    .contact-container{
+    .contact-container {
         flex-direction: column;
     }
+
+    .contact-group{
+        flex-direction: column;
+    }
+
+    .contact-right-title{
+        margin-top: 1em;
+        font-size: 18px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    .contact-button-cv{
+        margin-bottom: 1em;
+    }
+
+    .contact-form-button{
+        margin-bottom: 1em;
+    }
+}
+
+.contact-button-cv {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: #ffc107;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-button {
+    transition: 0.5s;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    background-color: #ffc107;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.contact-button-cv:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+.field {
+    display: flex;
+    width: 100%;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+}
+
+input,
+label,
+textarea {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+
+input {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+}
+
+textarea {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+    resize: none;
+}
+input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+textarea:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+
+input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+textarea:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+textarea:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+}
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
 }

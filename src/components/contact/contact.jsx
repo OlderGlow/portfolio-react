@@ -20,6 +20,15 @@ function Contact() {
         });
     }
 
+    function maxLengthCheck(e) {
+        if (isNaN(parseFloat(e.target.value))) {
+          e.target.value="";
+        }
+        if (e.target.value.length > e.target.max.length) {
+          e.target.value = e.target.value.slice(0, e.max.length)
+        }
+      }
+
     const verify = (e) => {
         e.preventDefault();
         if (!field.user_email.includes('.')) {
@@ -106,8 +115,10 @@ function Contact() {
                                 className='contact-form-input-phone'
                                 placeholder='0203040506'
                                 pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+                                maxLength="11" min="1" max="99999999999"
                                 value={field.phone}
                                 onChange={handleChange}
+                                onInput={maxLengthCheck}
                                 />
                             <label htmlFor='phone'>Téléphone</label>
                         </div>

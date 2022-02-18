@@ -100,7 +100,7 @@ function Contact() {
                         <div className='field'>
 
                             <input
-                                type="phone"
+                                type="tel"
                                 name="user_phone"
                                 id='phone'
                                 className='contact-form-input-phone'

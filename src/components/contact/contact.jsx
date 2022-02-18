@@ -105,6 +105,7 @@ function Contact() {
                                 id='phone'
                                 className='contact-form-input-phone'
                                 placeholder='0203040506'
+                                pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
                                 value={field.phone}
                                 onChange={handleChange}
                                 />

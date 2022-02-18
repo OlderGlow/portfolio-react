@@ -211,9 +211,11 @@ input:focus + label,
 input:not(:placeholder-shown) + label {
     transform: translate(0, 0) scale(1);
     cursor: pointer;
+    color: #ffc107;
 }
 textarea:focus + label,
 textarea:not(:placeholder-shown) + label {
+    color: #ffc107;
     transform: translate(0, 0) scale(1);
     cursor: pointer;
 }

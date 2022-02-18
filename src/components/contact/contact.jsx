@@ -82,7 +82,7 @@ function Contact() {
                                 type="text"
                                 name="user_name"
                                 id='fullname'
-                                placeholder='Camille'
+                                placeholder='Camille Dupond'
                                 required
                                 value={field.name}
                                 onChange={handleChange}/>

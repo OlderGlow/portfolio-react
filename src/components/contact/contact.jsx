@@ -1,5 +1,5 @@
 import './contact.css';
-import React, {useRef, useState, useEffect, useCallback} from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import CV from '../../assets/CV_Picquet.pdf';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
@@ -36,10 +36,6 @@ function Contact() {
                 .value
                 .slice(0, e.max.length)
         }
-    }
-
-    function onChange(value) {
-        console.log("Captcha value:", value);
     }
 
     const verify = (e) => {

@@ -64,15 +64,9 @@ function Contact() {
             <div className="contact-left">
                 <h1>Me contacter</h1>
                 <div className="contact-informations">
-                    <h4>
-                        <i className="fa-solid fa-phone"></i>
-                        +(33) 0650287234</h4>
-                    <h4>
-                        <i className="fa-solid fa-at"></i>
+                    <h4 className='contact-mail'>
+                    <i className="fa fa-envelope" aria-hidden="true"></i> - 
                         julienpicquet1@gmail.com</h4>
-                    <h4>
-                        <i className="fa-solid fa-location-dot"></i>
-                        6 Boulevard du Général de Gaulle - 49100 Angers</h4>
                     <button type='button' className='contact-button-cv'>
                         <a href={CV}>Télécharger mon CV</a>
                     </button>

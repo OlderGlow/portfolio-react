@@ -159,7 +159,7 @@ function Contact() {
                         <label htmlFor='message'>Message</label>
                     </div>
                     {!isSending ? <ReCAPTCHA
-                        sitekey="6LdFlo8eAAAAAOdwQhzkycgvJ9v4yTYhSIL_U2s5"
+                        sitekey="6LdFlo8eAAAAACUcXFb8u_3eaD4HkOY1a5GEOQrx"
                         onChange={onChange}/> : ''}
                     {!isSending
                         ? <button type="submit" className='contact-form-button'>Envoyer</button>

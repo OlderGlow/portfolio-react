@@ -12,6 +12,13 @@
     align-items: center;
 }
 
+.contact-form-loader > :only-child {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .fa-phone {
     color: #368522;
 }
@@ -87,6 +94,17 @@ h4 {
 
     .contact-informations{
         width: 75%;
+    }
+
+    .contact-form-loader > :only-child {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1em;
+        margin-bottom: 3em;
     }
 }
 

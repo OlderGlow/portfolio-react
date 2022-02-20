@@ -155,11 +155,12 @@ function Contact() {
                     </div>
                     {!isSending
                         ? <button type="submit" className='contact-form-button'>Envoyer</button>
-                        : <TailSpin
-                            className='contact-form-loader'
+                        : <div className='contact-form-loader'>
+                            <TailSpin
                             color="#ffc107"
                             height={70}
-                            width={70}/>}
+                            width={70}/>
+                            </div>}
                 </form>}
             </div>
         </div>

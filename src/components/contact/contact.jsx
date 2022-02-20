@@ -1,11 +1,12 @@
 import './contact.css';
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect, useCallback} from 'react';
 import emailjs from '@emailjs/browser';
 import CV from '../../assets/CV_Picquet.pdf';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import {TailSpin} from 'react-loader-spinner';
-import ReCAPTCHA from "react-google-recaptcha";
-
+import {
+    GoogleReCaptcha
+  } from 'react-google-recaptcha-v3';
 function Contact() {
 
     const form = useRef();
@@ -158,9 +159,9 @@ function Contact() {
                             required/>
                         <label htmlFor='message'>Message</label>
                     </div>
-                    {!isSending ? <ReCAPTCHA
-                        sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
-                        onChange={onChange}/> : ''}
+
+    <GoogleReCaptcha onVerify={(e) => console.log(e)} />
+
                     {!isSending
                         ? <button type="submit" className='contact-form-button'>Envoyer</button>
                         : <div className='contact-form-loader'>

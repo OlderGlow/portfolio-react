@@ -2,12 +2,16 @@ import './contact.css';
 import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import CV from '../../assets/CV_Picquet.pdf';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import {TailSpin} from 'react-loader-spinner';
 
 function Contact() {
 
     const form = useRef();
     const [send,
         setSend] = useState(false);
+    const [isSending,
+        setIsSending] = useState(false);
     const [field,
         setField] = useState({user_name: '', user_email: '', message: '', user_phone: '', user_subject: ''});
     const [error,
@@ -22,12 +26,15 @@ function Contact() {
 
     function maxLengthCheck(e) {
         if (isNaN(parseFloat(e.target.value))) {
-          e.target.value="";
+            e.target.value = "";
         }
         if (e.target.value.length > e.target.max.length) {
-          e.target.value = e.target.value.slice(0, e.max.length)
+            e.target.value = e
+                .target
+                .value
+                .slice(0, e.max.length)
         }
-      }
+    }
 
     const verify = (e) => {
         e.preventDefault();
@@ -39,12 +46,14 @@ function Contact() {
             sendEmail();
         }
     }
-    const sendEmail = (e) => {
+    const sendEmail = () => {
+        setIsSending(!isSending);
         emailjs
             .sendForm('service_b4py50s', 'template_yi4rupj', form.current, 'user_enhIBoHFn9F4GpNQDYEm0')
             .then((result) => {
-                console.log(result.text);
+                console.log(result.text + ': le message a bien été envoyé');
                 setSend(!send);
+                setIsSending(!isSending);
             }, (error) => {
                 console.log(error.text);
             });
@@ -115,11 +124,12 @@ function Contact() {
                                 className='contact-form-input-phone'
                                 placeholder='0203040506'
                                 pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
-                                maxLength="11" min="1" max="99999999999"
+                                maxLength="11"
+                                min="1"
+                                max="99999999999"
                                 value={field.phone}
                                 onChange={handleChange}
-                                onInput={maxLengthCheck}
-                                />
+                                onInput={maxLengthCheck}/>
                             <label htmlFor='phone'>Téléphone</label>
                         </div>
 
@@ -149,7 +159,13 @@ function Contact() {
                             required/>
                         <label htmlFor='message'>Message</label>
                     </div>
-                    <button type="submit" className='contact-form-button'>Envoyer</button>
+                    {!isSending
+                        ? <button type="submit" className='contact-form-button'>Envoyer</button>
+                        : <TailSpin
+                            className='contact-form-loader'
+                            color="#ffc107"
+                            height={70}
+                            width={70}/>}
                 </form>}
             </div>
         </div>

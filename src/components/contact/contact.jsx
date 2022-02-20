@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import CV from '../../assets/CV_Picquet.pdf';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import {TailSpin} from 'react-loader-spinner';
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
 
@@ -36,6 +37,10 @@ function Contact() {
         }
     }
 
+    function onChange(value) {
+        console.log("Captcha value:", value);
+    }
+
     const verify = (e) => {
         e.preventDefault();
         if (!field.user_email.includes('.')) {
@@ -65,8 +70,8 @@ function Contact() {
                 <h1>Me contacter</h1>
                 <div className="contact-informations">
                     <h4 className='contact-mail'>
-                    <i className="fa fa-envelope" aria-hidden="true"></i> - 
-                        julienpicquet1@gmail.com</h4>
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
+                        - julienpicquet1@gmail.com</h4>
                     <button type='button' className='contact-button-cv'>
                         <a href={CV}>Télécharger mon CV</a>
                     </button>
@@ -153,14 +158,14 @@ function Contact() {
                             required/>
                         <label htmlFor='message'>Message</label>
                     </div>
+                    {!isSending ? <ReCAPTCHA
+                        sitekey="6LdFlo8eAAAAAOdwQhzkycgvJ9v4yTYhSIL_U2s5"
+                        onChange={onChange}/> : ''}
                     {!isSending
                         ? <button type="submit" className='contact-form-button'>Envoyer</button>
                         : <div className='contact-form-loader'>
-                            <TailSpin
-                            color="#ffc107"
-                            height={70}
-                            width={70}/>
-                            </div>}
+                            <TailSpin color="#ffc107" height={70} width={70}/>
+                        </div>}
                 </form>}
             </div>
         </div>

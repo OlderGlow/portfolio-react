@@ -1,27 +1,12 @@
 import './head-page.css';
 import Me from '../../img/julien.png';
-import {useState} from "react";
+
 
 function HeadPage() {
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
         <div className='container'>
-            <div className='head-menu-sticky'  onClick={() => setIsOpen(!isOpen)}>
-                <div className="head-menu-icon">
-                    <i className='fa fa-bars'></i>
-                </div>
-            </div>
-            {/*{isOpen && <div className="head-menu-open">}
-                <ul>
-                    <li>À Propos</li>
-                    <li>Technologies & Langages de programmation</li>
-                    <li>Projets</li>
-                    <li>Me contacter</li>
-                </ul>
-            </div>*/}
             <section className='head-left'>
                 <div className='head-title'>
                     <h2 id='head-title-first'>Bonjour, je suis</h2>

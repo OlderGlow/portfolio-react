@@ -80,60 +80,7 @@ h1
     color: white;
 }
 
-.head-menu-sticky
-{
-    position: absolute;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 50px;
-    height: 50px;
-    margin: 30px;
-
-    transition: 500ms;
-
-    border-radius: 50%;
-    background-color: #ffc107;
-}
-
-.head-menu-sticky:hover
-{
-    cursor: pointer;
-    transition: 500ms;
-    transform: rotate(-25deg);
-
-    filter: opacity(75%);
-}
-
-.head-menu-icon
-{
-    color: white;
-}
-
-.head-menu-open
-{
-    position: absolute;
-
-    transition: all 500ms ease;
-
-    background-color: #ffc107;
-}
-.head-menu-open ul
-{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.head-menu-open li
-{
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 ul
 {
     display: flex;

@@ -49,6 +49,7 @@ function Contact() {
         }
     }
     const sendEmail = () => {
+
         setIsSending(!isSending);
         emailjs
             .sendForm('service_b4py50s', 'template_yi4rupj', form.current, 'user_enhIBoHFn9F4GpNQDYEm0')
@@ -156,10 +157,10 @@ function Contact() {
                         <label htmlFor='message'>Message</label>
                     </div>
 
-    <GoogleReCaptcha onVerify={(e) => console.log(e)} />
 
                     {!isSending
-                        ? <button type="submit" className='contact-form-button'>Envoyer</button>
+                        ? <button type="submit" className='contact-form-button' data-sitekey="6LdFlo8eAAAAAOdwQhzkycgvJ9v4yTYhSIL_U2s5" 
+                        data-callback='onSubmit' >Envoyer</button>
                         : <div className='contact-form-loader'>
                             <TailSpin color="#ffc107" height={70} width={70}/>
                         </div>}

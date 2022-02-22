@@ -43,20 +43,21 @@
     color: white;
 }
 
-ul
+.footer-menu ul
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 20%;
 
     list-style: none;
 }
 
-li
+.footer-menu li
 {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .footer-menu i
 {
@@ -103,7 +104,11 @@ li
         justify-content: center;
     }
 
-
+    .footer-menu ul
+    {
+        justify-content: space-between;
+        width: 75%;
+    }
 
     .footer-copyright
     {

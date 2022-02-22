@@ -1,7 +1,6 @@
 .about-container
 {
     display: flex;
-
     min-height: 100vh;
 }
 
@@ -78,6 +77,10 @@
     .about-left
     {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .about-right{
+        margin-bottom: 1rem;
     }
 
     .about-title

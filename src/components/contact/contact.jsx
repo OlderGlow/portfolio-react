@@ -4,9 +4,7 @@ import emailjs from '@emailjs/browser';
 import CV from '../../assets/CV_Picquet.pdf';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import {TailSpin} from 'react-loader-spinner';
-import {
-    GoogleReCaptcha
-  } from 'react-google-recaptcha-v3';
+
 function Contact() {
 
     const form = useRef();

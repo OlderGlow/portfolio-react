@@ -12,6 +12,7 @@ function HeadPage() {
                     <h2 id='head-title-first'>Bonjour, je suis</h2>
                     <h1>Julien PICQUET</h1>
                     <h2 id='head-title-third'>Concepteur - Développeur d'Application</h2>
+                    <h4 id='head-title-fourth'>En recherche d'Alternance dès le 02/03/2022</h4>
                 </div>
             </section>
             <section className='head-right'>

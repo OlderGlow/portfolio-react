@@ -67,7 +67,7 @@ function Contact() {
                 <div className="contact-informations">
                     <h4 className='contact-mail'>
                         <i className="fa fa-envelope" aria-hidden="true"></i>
-                        - julienpicquet1@gmail.com</h4>
+                        &nbsp; - julienpicquet1@gmail.com</h4>
                     <button type='button' className='contact-button-cv'>
                         <a href={CV}>Télécharger mon CV</a>
                     </button>

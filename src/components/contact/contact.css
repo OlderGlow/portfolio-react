@@ -2,7 +2,7 @@
 {
     display: flex;
 
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .contact-informations
@@ -35,7 +35,7 @@
 {
     display: flex;
     align-items: center;
-    flex: 1 1 150px;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
 
@@ -53,7 +53,7 @@
 {
     display: flex;
     align-items: center;
-    flex: 1 1 150px;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
 

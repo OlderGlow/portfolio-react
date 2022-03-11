@@ -1,5 +1,7 @@
 .contact-container
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     height: 100%;
@@ -8,10 +10,19 @@
 
 .contact-informations
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     width: 50%;
 
@@ -20,8 +31,12 @@
 
 .contact-form-loader > :only-child
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     width: 100%;
 
@@ -34,11 +49,22 @@
 }
 .contact-left
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     text-align: center;
 
@@ -52,16 +78,29 @@
 
 .contact-right
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     text-align: justify;
 }
 .contact-group
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -71,10 +110,19 @@
 }
 .contact-form
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     margin-top: 1rem;
 }
@@ -92,12 +140,18 @@ h4
 {
     .contact-container
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .contact-group
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .contact-right-title
@@ -129,9 +183,15 @@ h4
 
     .contact-form-loader > :only-child
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
 
         width: 100%;
         margin-top: 1em;
@@ -147,14 +207,24 @@ h4
     font-size: 24px;
     font-weight: bold;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     width: 100%;
     padding: 1rem;
 
     cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     text-align: center;
 
@@ -173,15 +243,25 @@ h4
     font-size: 24px;
     font-weight: bold;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     width: 50%;
     margin-top: 1rem;
     padding: 1rem;
 
     cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     text-align: center;
 
@@ -193,28 +273,47 @@ h4
 
 .contact-form-loader
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .contact-button-cv:hover
 {
     cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
 }
 
 .contact-form-button:hover
 {
     cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
 }
 
 .field
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
 
     width: 100%;
     margin-bottom: 1em;
@@ -224,9 +323,13 @@ input,
 label,
 textarea
 {
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
     transition: all .2s;
 
-    touch-action: manipulation;
+    -ms-touch-action: manipulation;
+
+        touch-action: manipulation;
 }
 
 input
@@ -281,7 +384,7 @@ label
     color: rgb(97, 97, 97);
 }
 
-input:placeholder-shown + label
+input:-moz-placeholder-shown + label
 {
     overflow: hidden;
 
@@ -290,6 +393,65 @@ input:placeholder-shown + label
     cursor: text;
     transform: translate(0, 2.125rem) scale(1.5);
     transform-origin: left bottom;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder + label
+{
+    overflow: hidden;
+
+    max-width: 66.66%;
+
+    cursor: text;
+    -ms-transform: translate(0, 2.125rem) scale(1.5);
+        transform: translate(0, 2.125rem) scale(1.5);
+    -ms-transform-origin: left bottom;
+        transform-origin: left bottom;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input:placeholder-shown + label
+{
+    overflow: hidden;
+
+    max-width: 66.66%;
+
+    cursor: text;
+    -webkit-transform: translate(0, 2.125rem) scale(1.5);
+        -ms-transform: translate(0, 2.125rem) scale(1.5);
+            transform: translate(0, 2.125rem) scale(1.5);
+    -webkit-transform-origin: left bottom;
+        -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+textarea:-moz-placeholder-shown + label
+{
+    overflow: hidden;
+
+    max-width: 66.66%;
+
+    cursor: text;
+    transform: translate(0, 2.125rem) scale(1.5);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+textarea:-ms-input-placeholder + label
+{
+    overflow: hidden;
+
+    max-width: 66.66%;
+
+    cursor: text;
+    -ms-transform: translate(0, 2.125rem) scale(1.5);
+        transform: translate(0, 2.125rem) scale(1.5);
+    -ms-transform-origin: left bottom;
+        transform-origin: left bottom;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -300,14 +462,20 @@ textarea:placeholder-shown + label
     max-width: 66.66%;
 
     cursor: text;
-    transform: translate(0, 2.125rem) scale(1.5);
-    transform-origin: left bottom;
+    -webkit-transform: translate(0, 2.125rem) scale(1.5);
+        -ms-transform: translate(0, 2.125rem) scale(1.5);
+            transform: translate(0, 2.125rem) scale(1.5);
+    -webkit-transform-origin: left bottom;
+        -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
 }
 
 ::-webkit-input-placeholder
 {
+    -webkit-transition: inherit;
     transition: inherit;
 
     opacity: 0;
@@ -322,11 +490,45 @@ textarea:focus::-webkit-input-placeholder
     opacity: 1;
 }
 
+input:not(:-moz-placeholder-shown) + label
+{
+    cursor: pointer;
+    transform: translate(0, 0) scale(1);
+
+    color: #ffc107;
+}
+
+input:not(:-ms-input-placeholder) + label
+{
+    cursor: pointer;
+    -ms-transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1);
+
+    color: #ffc107;
+}
+
 input:focus + label,
 input:not(:placeholder-shown) + label
 {
     cursor: pointer;
+    -webkit-transform: translate(0, 0) scale(1);
+        -ms-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+
+    color: #ffc107;
+}
+textarea:not(:-moz-placeholder-shown) + label
+{
+    cursor: pointer;
     transform: translate(0, 0) scale(1);
+
+    color: #ffc107;
+}
+textarea:not(:-ms-input-placeholder) + label
+{
+    cursor: pointer;
+    -ms-transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1);
 
     color: #ffc107;
 }
@@ -334,7 +536,9 @@ textarea:focus + label,
 textarea:not(:placeholder-shown) + label
 {
     cursor: pointer;
-    transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+        -ms-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
 
     color: #ffc107;
 }
